@@ -1,0 +1,121 @@
+.room-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f9f5f0;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .explore-button {
+    background-color: #c89d56;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .explore-button:hover {
+    background-color: #b08545;
+  }
+  
+  .slider {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slider-item {
+    flex: 0 0 100%;
+    position: relative;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .slider-overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .slider-category {
+    font-size: 0.8rem;
+    color: #999;
+  }
+  
+  .slider-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .arrow-button {
+    background-color: #c89d56;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .arrow-button:hover {
+    background-color: #b08545;
+  }
+  
+  .slider-pagination {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #c89d56;
+  }
+  
